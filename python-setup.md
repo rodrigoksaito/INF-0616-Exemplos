@@ -48,11 +48,20 @@ execute-o e continue a instalação clicando em `I Agree` e `Next`.
 4. Execute o programa `Anaconta Navigator` abrindo um terminal e digitando
    `anaconda-navigator`.
 
-## Instalação local, Linux (Debian)
+## Instalação manual (Linux, Debian/Ubuntu)
 
-Se você é um usuário linux, um outro jeito "enxuto" de instalar o python
-é manualmente. Aqui, você precisa descrever os pacotes a serem utilizados
-individualmente:
+Essa instalação é mais "enxuta" que a da anaconda, mas você precisa
+descrever os pacotes a serem instalados manualmentee não terá o 
+Anaconda Navigator.
+
+Entretanto, você pode executar uma instância do jupyter (e assim ler e
+criar arquivos `.ipynb`) com o seguinte comando:
+
+```shell
+jupyter notebook
+``` 
+
+### Local
 
 ```
 sudo apt install python3 python3-dev python3-pip
@@ -67,7 +76,10 @@ pip install --user --upgrade numpy        \
 **Atenção:** é preciso garantir que `/home/{username}/.local/bin`
 esteja em seu `PATH`, para que os executores sejam feitos visíveis.
 
-Alternativamente, se quiser instalar globalmente:
+### Global (não recomendada)
+
+Se parece com a instalação local anterior, mas guarda as dependencias
+na pasta do sistema `/usr`:
 
 ```shell
 sudo apt install python3 python3-dev python3-pip
@@ -78,17 +90,8 @@ sudo pip install --upgrade numpy        \
                            jupyter
 ```
 
-Aqui não precisa de nenhum passo adicional.
-
-Na instalação local, você não terá acesso ao Anaconda Navigator.
-Entretanto, você pode executar um server jupyter (e assim ler e criar
-arquivos `.ipynb`) com o seguinte comando:
-
-```shell
-jupyter notebook
-``` 
-
 # Leitura de suporte
 
 Veja a [documentação](https://docs.anaconda.com/) do anaconda para mais
 detalhes na instalação do mesmo.
+
