@@ -67,7 +67,7 @@ pip install --user --upgrade numpy        \
 **Atenção:** é preciso garantir que `/home/{username}/.local/bin`
 esteja em seu `PATH`, para que os executores sejam feitos visíveis.
 
-Se quiser instalar globalmente:
+Alternativamente, se quiser instalar globalmente:
 
 ```shell
 sudo apt install python3 python3-dev python3-pip
